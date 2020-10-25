@@ -3,7 +3,7 @@
     Dim hasil As Boolean, dtKriteria As New DataTable
     Public idSubKriteria As Integer = 0
 
-    Private Sub Clear()
+    Public Sub Clear()
         Me.Text = "Tambah Data Sub Kriteria"
         lblJudul.Text = "Tambah Data Sub Kriteria"
         txtSub.Clear()

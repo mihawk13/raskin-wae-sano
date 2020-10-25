@@ -77,18 +77,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAlternatif.Designer.vb">
-      <DependentUpon>frmAlternatif.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAlternatif.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAlternatif_Tambah.Designer.vb">
-      <DependentUpon>frmAlternatif_Tambah.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAlternatif_Tambah.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmKriteria.Designer.vb">
       <DependentUpon>frmKriteria.vb</DependentUpon>
     </Compile>
@@ -168,11 +156,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAlternatif.resx">
-      <DependentUpon>frmAlternatif.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAlternatif_Tambah.resx">
-      <DependentUpon>frmAlternatif_Tambah.vb</DependentUpon>
+    <EmbeddedResource Include="frmKriteria.resx">
+      <DependentUpon>frmKriteria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKriteria_Tambah.resx">
       <DependentUpon>frmKriteria_Tambah.vb</DependentUpon>

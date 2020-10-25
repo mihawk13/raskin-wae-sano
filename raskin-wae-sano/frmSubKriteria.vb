@@ -14,6 +14,7 @@
     End Sub
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        frmSubKriteria_Tambah.Clear()
         frmSubKriteria_Tambah.ShowDialog()
     End Sub
 

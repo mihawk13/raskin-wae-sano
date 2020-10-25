@@ -46,7 +46,7 @@ Partial Class frmSubKriteria_Tambah
         Me.panUp.Dock = System.Windows.Forms.DockStyle.Top
         Me.panUp.Location = New System.Drawing.Point(0, 0)
         Me.panUp.Name = "panUp"
-        Me.panUp.Size = New System.Drawing.Size(329, 71)
+        Me.panUp.Size = New System.Drawing.Size(325, 71)
         Me.panUp.TabIndex = 0
         '
         'lblJudul
@@ -57,7 +57,7 @@ Partial Class frmSubKriteria_Tambah
         Me.lblJudul.Location = New System.Drawing.Point(13, 9)
         Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(301, 48)
+        Me.lblJudul.Size = New System.Drawing.Size(297, 48)
         Me.lblJudul.TabIndex = 2
         Me.lblJudul.Text = "Tambah Data Sub Kriteria"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -77,7 +77,7 @@ Partial Class frmSubKriteria_Tambah
         Me.panDown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panDown.Location = New System.Drawing.Point(0, 71)
         Me.panDown.Name = "panDown"
-        Me.panDown.Size = New System.Drawing.Size(329, 169)
+        Me.panDown.Size = New System.Drawing.Size(325, 165)
         Me.panDown.TabIndex = 0
         '
         'cboKriteria
@@ -101,7 +101,7 @@ Partial Class frmSubKriteria_Tambah
         Me.btnSimpan.Location = New System.Drawing.Point(121, 124)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(89, 26)
-        Me.btnSimpan.TabIndex = 7
+        Me.btnSimpan.TabIndex = 2
         Me.btnSimpan.Text = "Simpan"
         Me.btnSimpan.UseVisualStyleBackColor = False
         '
@@ -117,7 +117,7 @@ Partial Class frmSubKriteria_Tambah
         Me.btnBatal.Location = New System.Drawing.Point(216, 124)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(89, 26)
-        Me.btnBatal.TabIndex = 8
+        Me.btnBatal.TabIndex = 3
         Me.btnBatal.Text = "Batal"
         Me.btnBatal.UseVisualStyleBackColor = False
         '
@@ -126,14 +126,14 @@ Partial Class frmSubKriteria_Tambah
         Me.txtSub.Location = New System.Drawing.Point(121, 68)
         Me.txtSub.Name = "txtSub"
         Me.txtSub.Size = New System.Drawing.Size(184, 20)
-        Me.txtSub.TabIndex = 1
+        Me.txtSub.TabIndex = 0
         '
         'txtBobot
         '
         Me.txtBobot.Location = New System.Drawing.Point(121, 94)
         Me.txtBobot.Name = "txtBobot"
         Me.txtBobot.Size = New System.Drawing.Size(184, 20)
-        Me.txtBobot.TabIndex = 0
+        Me.txtBobot.TabIndex = 1
         '
         'Label4
         '
@@ -175,7 +175,7 @@ Partial Class frmSubKriteria_Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(329, 240)
+        Me.ClientSize = New System.Drawing.Size(325, 236)
         Me.ControlBox = False
         Me.Controls.Add(Me.panDown)
         Me.Controls.Add(Me.panUp)

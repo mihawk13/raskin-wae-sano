@@ -48,20 +48,12 @@
         ActiveMenu(btnPenduduk, panUp, frmPenduduk, panForm)
     End Sub
 
-    Private Sub btnAlternatif_Click(sender As Object, e As EventArgs) Handles btnAlternatif.Click
-        ActiveMenu(btnAlternatif, panUp, frmAlternatif, panForm)
-    End Sub
-
     Private Sub btnKriteria_Click(sender As Object, e As EventArgs) Handles btnKriteria.Click
         ActiveMenu(btnKriteria, panUp, frmKriteria, panForm)
     End Sub
 
     Private Sub btnSubKriteria_Click(sender As Object, e As EventArgs) Handles btnSubKriteria.Click
         ActiveMenu(btnSubKriteria, panUp, frmSubKriteria, panForm)
-    End Sub
-
-    Private Sub btnPenilaian_Click(sender As Object, e As EventArgs) Handles btnPenilaian.Click
-
     End Sub
 
     Private Sub btnProses_Click(sender As Object, e As EventArgs) Handles btnProses.Click

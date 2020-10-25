@@ -15,6 +15,7 @@
     End Sub
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        frmUser_Tambah.Clear()
         frmUser_Tambah.ShowDialog()
     End Sub
 

@@ -3,7 +3,7 @@
     Dim hasil As Boolean
     Public idUser As Integer = 0
 
-    Private Sub Clear()
+    Public Sub Clear()
         Me.Text = "Tambah User"
         lblJudul.Text = "Tambah User"
         txtUser.Clear()

@@ -13,10 +13,6 @@
         LoadData()
     End Sub
 
-    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
-        frmKriteria_Tambah.ShowDialog()
-    End Sub
-
     Private Sub GridView_Click(sender As Object, e As EventArgs) Handles GridView.Click
         frmKriteria_Tambah.Text = "Ubah Data Kriteria"
         frmKriteria_Tambah.lblJudul.Text = "Ubah Data Kriteria"

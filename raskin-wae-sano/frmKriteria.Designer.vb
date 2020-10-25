@@ -22,7 +22,6 @@ Partial Class frmKriteria
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnTambah = New System.Windows.Forms.Button()
         Me.btnUbah = New System.Windows.Forms.Button()
         Me.btnCari = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -37,22 +36,6 @@ Partial Class frmKriteria
         CType(Me.GridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnTambah
-        '
-        Me.btnTambah.BackColor = System.Drawing.Color.RoyalBlue
-        Me.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnTambah.FlatAppearance.BorderSize = 0
-        Me.btnTambah.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue
-        Me.btnTambah.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTambah.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnTambah.Location = New System.Drawing.Point(12, 12)
-        Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(89, 26)
-        Me.btnTambah.TabIndex = 2
-        Me.btnTambah.Text = "Tambah"
-        Me.btnTambah.UseVisualStyleBackColor = False
-        '
         'btnUbah
         '
         Me.btnUbah.BackColor = System.Drawing.Color.RoyalBlue
@@ -62,7 +45,7 @@ Partial Class frmKriteria
         Me.btnUbah.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUbah.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnUbah.Location = New System.Drawing.Point(107, 12)
+        Me.btnUbah.Location = New System.Drawing.Point(12, 12)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(89, 26)
         Me.btnUbah.TabIndex = 2
@@ -89,7 +72,6 @@ Partial Class frmKriteria
         '
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.txtCari)
-        Me.Panel1.Controls.Add(Me.btnTambah)
         Me.Panel1.Controls.Add(Me.btnUbah)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -167,7 +149,6 @@ Partial Class frmKriteria
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnTambah As System.Windows.Forms.Button
     Friend WithEvents btnUbah As System.Windows.Forms.Button
     Friend WithEvents btnCari As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel

@@ -27,11 +27,9 @@ Partial Class frmUtama
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnLaporan = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
-        Me.btnAlternatif = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnHasil = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnPenilaian = New System.Windows.Forms.Button()
         Me.btnProses = New System.Windows.Forms.Button()
         Me.btnSubKriteria = New System.Windows.Forms.Button()
         Me.btnKriteria = New System.Windows.Forms.Button()
@@ -49,11 +47,9 @@ Partial Class frmUtama
         Me.panUp.Controls.Add(Me.Panel1)
         Me.panUp.Controls.Add(Me.btnLaporan)
         Me.panUp.Controls.Add(Me.btnHome)
-        Me.panUp.Controls.Add(Me.btnAlternatif)
         Me.panUp.Controls.Add(Me.Label2)
         Me.panUp.Controls.Add(Me.btnHasil)
         Me.panUp.Controls.Add(Me.Label1)
-        Me.panUp.Controls.Add(Me.btnPenilaian)
         Me.panUp.Controls.Add(Me.btnProses)
         Me.panUp.Controls.Add(Me.btnSubKriteria)
         Me.panUp.Controls.Add(Me.btnKriteria)
@@ -101,7 +97,7 @@ Partial Class frmUtama
         Me.btnLaporan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnLaporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLaporan.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnLaporan.Location = New System.Drawing.Point(1117, 77)
+        Me.btnLaporan.Location = New System.Drawing.Point(994, 77)
         Me.btnLaporan.Name = "btnLaporan"
         Me.btnLaporan.Size = New System.Drawing.Size(100, 34)
         Me.btnLaporan.TabIndex = 1
@@ -118,29 +114,12 @@ Partial Class frmUtama
         Me.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnHome.Location = New System.Drawing.Point(163, 77)
+        Me.btnHome.Location = New System.Drawing.Point(252, 77)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(100, 34)
         Me.btnHome.TabIndex = 1
         Me.btnHome.Text = "Home"
         Me.btnHome.UseVisualStyleBackColor = False
-        '
-        'btnAlternatif
-        '
-        Me.btnAlternatif.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnAlternatif.BackColor = System.Drawing.Color.RoyalBlue
-        Me.btnAlternatif.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAlternatif.FlatAppearance.BorderSize = 0
-        Me.btnAlternatif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue
-        Me.btnAlternatif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnAlternatif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAlternatif.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnAlternatif.Location = New System.Drawing.Point(481, 77)
-        Me.btnAlternatif.Name = "btnAlternatif"
-        Me.btnAlternatif.Size = New System.Drawing.Size(100, 34)
-        Me.btnAlternatif.TabIndex = 1
-        Me.btnAlternatif.Text = "Data Alternatif"
-        Me.btnAlternatif.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -164,7 +143,7 @@ Partial Class frmUtama
         Me.btnHasil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnHasil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHasil.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnHasil.Location = New System.Drawing.Point(1011, 77)
+        Me.btnHasil.Location = New System.Drawing.Point(888, 77)
         Me.btnHasil.Name = "btnHasil"
         Me.btnHasil.Size = New System.Drawing.Size(100, 34)
         Me.btnHasil.TabIndex = 1
@@ -183,23 +162,6 @@ Partial Class frmUtama
         Me.Label1.Text = "Sistem Pendukung Keputusan Seleksi Penerima Raskin"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnPenilaian
-        '
-        Me.btnPenilaian.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnPenilaian.BackColor = System.Drawing.Color.RoyalBlue
-        Me.btnPenilaian.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPenilaian.FlatAppearance.BorderSize = 0
-        Me.btnPenilaian.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue
-        Me.btnPenilaian.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnPenilaian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPenilaian.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnPenilaian.Location = New System.Drawing.Point(799, 77)
-        Me.btnPenilaian.Name = "btnPenilaian"
-        Me.btnPenilaian.Size = New System.Drawing.Size(100, 34)
-        Me.btnPenilaian.TabIndex = 1
-        Me.btnPenilaian.Text = "Data Penilaian"
-        Me.btnPenilaian.UseVisualStyleBackColor = False
-        '
         'btnProses
         '
         Me.btnProses.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -210,7 +172,7 @@ Partial Class frmUtama
         Me.btnProses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnProses.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProses.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnProses.Location = New System.Drawing.Point(905, 77)
+        Me.btnProses.Location = New System.Drawing.Point(782, 77)
         Me.btnProses.Name = "btnProses"
         Me.btnProses.Size = New System.Drawing.Size(100, 34)
         Me.btnProses.TabIndex = 1
@@ -227,7 +189,7 @@ Partial Class frmUtama
         Me.btnSubKriteria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnSubKriteria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubKriteria.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnSubKriteria.Location = New System.Drawing.Point(693, 77)
+        Me.btnSubKriteria.Location = New System.Drawing.Point(676, 77)
         Me.btnSubKriteria.Name = "btnSubKriteria"
         Me.btnSubKriteria.Size = New System.Drawing.Size(100, 34)
         Me.btnSubKriteria.TabIndex = 1
@@ -244,7 +206,7 @@ Partial Class frmUtama
         Me.btnKriteria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnKriteria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnKriteria.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnKriteria.Location = New System.Drawing.Point(587, 77)
+        Me.btnKriteria.Location = New System.Drawing.Point(570, 77)
         Me.btnKriteria.Name = "btnKriteria"
         Me.btnKriteria.Size = New System.Drawing.Size(100, 34)
         Me.btnKriteria.TabIndex = 1
@@ -261,7 +223,7 @@ Partial Class frmUtama
         Me.btnUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUser.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnUser.Location = New System.Drawing.Point(269, 77)
+        Me.btnUser.Location = New System.Drawing.Point(358, 77)
         Me.btnUser.Name = "btnUser"
         Me.btnUser.Size = New System.Drawing.Size(100, 34)
         Me.btnUser.TabIndex = 1
@@ -278,7 +240,7 @@ Partial Class frmUtama
         Me.btnPenduduk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnPenduduk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPenduduk.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnPenduduk.Location = New System.Drawing.Point(375, 77)
+        Me.btnPenduduk.Location = New System.Drawing.Point(464, 77)
         Me.btnPenduduk.Name = "btnPenduduk"
         Me.btnPenduduk.Size = New System.Drawing.Size(100, 34)
         Me.btnPenduduk.TabIndex = 1
@@ -318,8 +280,6 @@ Partial Class frmUtama
     Friend WithEvents btnProses As System.Windows.Forms.Button
     Friend WithEvents btnKriteria As System.Windows.Forms.Button
     Friend WithEvents btnUser As System.Windows.Forms.Button
-    Friend WithEvents btnPenilaian As System.Windows.Forms.Button
-    Friend WithEvents btnAlternatif As System.Windows.Forms.Button
     Friend WithEvents btnLogout As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

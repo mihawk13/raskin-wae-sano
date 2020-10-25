@@ -25,23 +25,30 @@ Partial Class frmPenduduk_Tambah
         Me.panUp = New System.Windows.Forms.Panel()
         Me.lblJudul = New System.Windows.Forms.Label()
         Me.panDown = New System.Windows.Forms.Panel()
+        Me.cboK4 = New System.Windows.Forms.ComboBox()
+        Me.cboK3 = New System.Windows.Forms.ComboBox()
+        Me.cboK2 = New System.Windows.Forms.ComboBox()
+        Me.cboK1 = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.btnSimpan = New System.Windows.Forms.Button()
         Me.btnBatal = New System.Windows.Forms.Button()
+        Me.txtRT = New System.Windows.Forms.TextBox()
+        Me.txtDesa = New System.Windows.Forms.TextBox()
         Me.txtKTP = New System.Windows.Forms.TextBox()
+        Me.txtKec = New System.Windows.Forms.TextBox()
+        Me.txtNama = New System.Windows.Forms.TextBox()
         Me.txtKK = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.txtDesa = New System.Windows.Forms.TextBox()
-        Me.txtKec = New System.Windows.Forms.TextBox()
-        Me.txtRT = New System.Windows.Forms.TextBox()
-        Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.panUp.SuspendLayout()
         Me.panDown.SuspendLayout()
         Me.SuspendLayout()
@@ -54,7 +61,7 @@ Partial Class frmPenduduk_Tambah
         Me.panUp.Dock = System.Windows.Forms.DockStyle.Top
         Me.panUp.Location = New System.Drawing.Point(0, 0)
         Me.panUp.Name = "panUp"
-        Me.panUp.Size = New System.Drawing.Size(337, 71)
+        Me.panUp.Size = New System.Drawing.Size(617, 71)
         Me.panUp.TabIndex = 0
         '
         'lblJudul
@@ -65,7 +72,7 @@ Partial Class frmPenduduk_Tambah
         Me.lblJudul.Location = New System.Drawing.Point(13, 9)
         Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(309, 48)
+        Me.lblJudul.Size = New System.Drawing.Size(589, 48)
         Me.lblJudul.TabIndex = 2
         Me.lblJudul.Text = "Tambah Data Penduduk"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -73,28 +80,107 @@ Partial Class frmPenduduk_Tambah
         'panDown
         '
         Me.panDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panDown.Controls.Add(Me.cboK4)
+        Me.panDown.Controls.Add(Me.cboK3)
+        Me.panDown.Controls.Add(Me.cboK2)
+        Me.panDown.Controls.Add(Me.cboK1)
+        Me.panDown.Controls.Add(Me.Label13)
+        Me.panDown.Controls.Add(Me.Label12)
+        Me.panDown.Controls.Add(Me.Label11)
+        Me.panDown.Controls.Add(Me.Label9)
         Me.panDown.Controls.Add(Me.btnSimpan)
         Me.panDown.Controls.Add(Me.btnBatal)
-        Me.panDown.Controls.Add(Me.txtAlamat)
         Me.panDown.Controls.Add(Me.txtRT)
         Me.panDown.Controls.Add(Me.txtDesa)
         Me.panDown.Controls.Add(Me.txtKTP)
         Me.panDown.Controls.Add(Me.txtKec)
         Me.panDown.Controls.Add(Me.txtNama)
         Me.panDown.Controls.Add(Me.txtKK)
-        Me.panDown.Controls.Add(Me.Label8)
         Me.panDown.Controls.Add(Me.Label7)
         Me.panDown.Controls.Add(Me.Label6)
         Me.panDown.Controls.Add(Me.Label5)
         Me.panDown.Controls.Add(Me.Label4)
         Me.panDown.Controls.Add(Me.Label3)
+        Me.panDown.Controls.Add(Me.Label10)
         Me.panDown.Controls.Add(Me.Label2)
         Me.panDown.Controls.Add(Me.Label1)
         Me.panDown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panDown.Location = New System.Drawing.Point(0, 71)
         Me.panDown.Name = "panDown"
-        Me.panDown.Size = New System.Drawing.Size(337, 337)
+        Me.panDown.Size = New System.Drawing.Size(617, 234)
         Me.panDown.TabIndex = 0
+        '
+        'cboK4
+        '
+        Me.cboK4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboK4.FormattingEnabled = True
+        Me.cboK4.Location = New System.Drawing.Point(452, 122)
+        Me.cboK4.Name = "cboK4"
+        Me.cboK4.Size = New System.Drawing.Size(121, 21)
+        Me.cboK4.TabIndex = 11
+        '
+        'cboK3
+        '
+        Me.cboK3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboK3.FormattingEnabled = True
+        Me.cboK3.Location = New System.Drawing.Point(452, 95)
+        Me.cboK3.Name = "cboK3"
+        Me.cboK3.Size = New System.Drawing.Size(121, 21)
+        Me.cboK3.TabIndex = 11
+        '
+        'cboK2
+        '
+        Me.cboK2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboK2.FormattingEnabled = True
+        Me.cboK2.Location = New System.Drawing.Point(452, 68)
+        Me.cboK2.Name = "cboK2"
+        Me.cboK2.Size = New System.Drawing.Size(121, 21)
+        Me.cboK2.TabIndex = 11
+        '
+        'cboK1
+        '
+        Me.cboK1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboK1.FormattingEnabled = True
+        Me.cboK1.Location = New System.Drawing.Point(452, 41)
+        Me.cboK1.Name = "cboK1"
+        Me.cboK1.Size = New System.Drawing.Size(121, 21)
+        Me.cboK1.TabIndex = 11
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(323, 120)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(78, 13)
+        Me.Label13.TabIndex = 9
+        Me.Label13.Text = "Kondisi Rumah"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(323, 94)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(96, 13)
+        Me.Label12.TabIndex = 9
+        Me.Label12.Text = "Tanggungan Anak"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(323, 68)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(128, 13)
+        Me.Label11.TabIndex = 9
+        Me.Label11.Text = "Penghasilan Setiap Bulan"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(323, 45)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(123, 13)
+        Me.Label9.TabIndex = 9
+        Me.Label9.Text = "Surat Keterangan Miskin"
         '
         'btnSimpan
         '
@@ -105,7 +191,7 @@ Partial Class frmPenduduk_Tambah
         Me.btnSimpan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
         Me.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSimpan.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnSimpan.Location = New System.Drawing.Point(103, 249)
+        Me.btnSimpan.Location = New System.Drawing.Point(104, 198)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(89, 26)
         Me.btnSimpan.TabIndex = 7
@@ -121,12 +207,26 @@ Partial Class frmPenduduk_Tambah
         Me.btnBatal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
         Me.btnBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnBatal.Location = New System.Drawing.Point(198, 249)
+        Me.btnBatal.Location = New System.Drawing.Point(199, 198)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(89, 26)
         Me.btnBatal.TabIndex = 8
         Me.btnBatal.Text = "Batal"
         Me.btnBatal.UseVisualStyleBackColor = False
+        '
+        'txtRT
+        '
+        Me.txtRT.Location = New System.Drawing.Point(103, 172)
+        Me.txtRT.Name = "txtRT"
+        Me.txtRT.Size = New System.Drawing.Size(184, 20)
+        Me.txtRT.TabIndex = 5
+        '
+        'txtDesa
+        '
+        Me.txtDesa.Location = New System.Drawing.Point(103, 120)
+        Me.txtDesa.Name = "txtDesa"
+        Me.txtDesa.Size = New System.Drawing.Size(184, 20)
+        Me.txtDesa.TabIndex = 3
         '
         'txtKTP
         '
@@ -135,12 +235,53 @@ Partial Class frmPenduduk_Tambah
         Me.txtKTP.Size = New System.Drawing.Size(184, 20)
         Me.txtKTP.TabIndex = 1
         '
+        'txtKec
+        '
+        Me.txtKec.Location = New System.Drawing.Point(103, 146)
+        Me.txtKec.Name = "txtKec"
+        Me.txtKec.Size = New System.Drawing.Size(184, 20)
+        Me.txtKec.TabIndex = 4
+        '
+        'txtNama
+        '
+        Me.txtNama.Location = New System.Drawing.Point(103, 94)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(184, 20)
+        Me.txtNama.TabIndex = 2
+        '
         'txtKK
         '
         Me.txtKK.Location = New System.Drawing.Point(104, 42)
         Me.txtKK.Name = "txtKK"
         Me.txtKK.Size = New System.Drawing.Size(184, 20)
         Me.txtKK.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(39, 175)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(52, 13)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "RT / RW"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(39, 149)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(61, 13)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Kecamatan"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(39, 123)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(32, 13)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Desa"
         '
         'Label4
         '
@@ -160,6 +301,15 @@ Partial Class frmPenduduk_Tambah
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "No KTP"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(310, 13)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(241, 13)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "SILAHKAN SESUAIKAN KRITERIA PENDUDUK"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -178,83 +328,11 @@ Partial Class frmPenduduk_Tambah
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "No KK"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(39, 123)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(32, 13)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Desa"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(39, 149)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 13)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Kecamatan"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(39, 175)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 13)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "RT / RW"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(39, 201)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Alamat"
-        '
-        'txtNama
-        '
-        Me.txtNama.Location = New System.Drawing.Point(103, 94)
-        Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(184, 20)
-        Me.txtNama.TabIndex = 2
-        '
-        'txtDesa
-        '
-        Me.txtDesa.Location = New System.Drawing.Point(103, 120)
-        Me.txtDesa.Name = "txtDesa"
-        Me.txtDesa.Size = New System.Drawing.Size(184, 20)
-        Me.txtDesa.TabIndex = 3
-        '
-        'txtKec
-        '
-        Me.txtKec.Location = New System.Drawing.Point(103, 146)
-        Me.txtKec.Name = "txtKec"
-        Me.txtKec.Size = New System.Drawing.Size(184, 20)
-        Me.txtKec.TabIndex = 4
-        '
-        'txtRT
-        '
-        Me.txtRT.Location = New System.Drawing.Point(103, 172)
-        Me.txtRT.Name = "txtRT"
-        Me.txtRT.Size = New System.Drawing.Size(184, 20)
-        Me.txtRT.TabIndex = 5
-        '
-        'txtAlamat
-        '
-        Me.txtAlamat.Location = New System.Drawing.Point(103, 198)
-        Me.txtAlamat.Multiline = True
-        Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(184, 45)
-        Me.txtAlamat.TabIndex = 6
-        '
         'frmPenduduk_Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(337, 408)
+        Me.ClientSize = New System.Drawing.Size(617, 305)
         Me.ControlBox = False
         Me.Controls.Add(Me.panDown)
         Me.Controls.Add(Me.panUp)
@@ -282,13 +360,20 @@ Partial Class frmPenduduk_Tambah
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnSimpan As System.Windows.Forms.Button
     Friend WithEvents btnBatal As System.Windows.Forms.Button
-    Friend WithEvents txtAlamat As System.Windows.Forms.TextBox
     Friend WithEvents txtRT As System.Windows.Forms.TextBox
     Friend WithEvents txtDesa As System.Windows.Forms.TextBox
     Friend WithEvents txtKec As System.Windows.Forms.TextBox
     Friend WithEvents txtNama As System.Windows.Forms.TextBox
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents cboK4 As System.Windows.Forms.ComboBox
+    Friend WithEvents cboK3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cboK2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cboK1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class
