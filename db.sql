@@ -23,17 +23,17 @@ DROP TABLE IF EXISTS `kriteria`;
 CREATE TABLE `kriteria` (
   `No_Kriteria` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `Nama` varchar(50) NOT NULL,
-  `Bobot` varchar(5) NOT NULL,
+  `Bobot` double NOT NULL,
   PRIMARY KEY (`No_Kriteria`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 /*Data for the table `kriteria` */
 
 insert  into `kriteria`(`No_Kriteria`,`Nama`,`Bobot`) values 
-(1,'Surat Keterangan Miskin','10'),
-(2,'Penghasilan Setiap Bulan','7.5'),
-(3,'Tanggungan Anak','5'),
-(4,'Kondisi Rumah','2.5');
+(1,'Surat Keterangan Miskin',10),
+(2,'Penghasilan Setiap Bulan',7.5),
+(3,'Tanggungan Anak',5),
+(4,'Kondisi Rumah',2.5);
 
 /*Table structure for table `penduduk` */
 
@@ -60,7 +60,7 @@ CREATE TABLE `penduduk` (
 
 insert  into `penduduk`(`ID`,`No_KK`,`No_KTP`,`Nama`,`Desa`,`Kecamatan`,`RT_RW`,`K_1`,`K_2`,`K_3`,`K_4`) values 
 (1,'5312042069730006','5312042003900006','Antonius','Wae Sano','Sanangoang','002/001','Punya','< 1jt','2','Sederhana'),
-(2,'123123','123213213','4fggf','fghgh','fgh','fgh','Punya','< 1jt','3','Cukup Sederhana');
+(2,'123123','123213213','Blasius Jeramun','Wae Sano','Sangaruang','002/001','Punya','> 5jt','1 anak','Sangat Mewah');
 
 /*Table structure for table `sub_kriteria` */
 
@@ -70,28 +70,28 @@ CREATE TABLE `sub_kriteria` (
   `No` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `Kriteria` varchar(50) NOT NULL,
   `Sub_Kriteria` varchar(20) NOT NULL,
-  `Bobot` varchar(5) NOT NULL,
+  `Bobot` double NOT NULL,
   PRIMARY KEY (`No`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 /*Data for the table `sub_kriteria` */
 
 insert  into `sub_kriteria`(`No`,`Kriteria`,`Sub_Kriteria`,`Bobot`) values 
-(1,'Surat Keterangan Miskin','Punya','10'),
-(2,'Surat Keterangan Miskin','Tidak Punya','2.5'),
-(3,'Penghasilan Setiap Bulan','< 1jt','10'),
-(4,'Penghasilan Setiap Bulan','1jt - 3jt','7.5'),
-(5,'Penghasilan Setiap Bulan','3jt - 5jt','5'),
-(6,'Penghasilan Setiap Bulan','> 5jt','2.5'),
-(7,'Tanggungan Anak','1 anak','2'),
-(8,'Tanggungan Anak','2 anak','4'),
-(9,'Tanggungan Anak','3 anak','6'),
-(10,'Tanggungan Anak','4 anak','8'),
-(11,'Tanggungan Anak','> 4 anak','10'),
-(12,'Kondisi Rumah','Cukup Sederhana','10'),
-(13,'Kondisi Rumah','Sederhana','7.5'),
-(14,'Kondisi Rumah','Mewah','5'),
-(15,'Kondisi Rumah','Sangat Mewah','2.5');
+(1,'Surat Keterangan Miskin','Punya',10),
+(2,'Surat Keterangan Miskin','Tidak Punya',2.5),
+(3,'Penghasilan Setiap Bulan','< 1jt',10),
+(4,'Penghasilan Setiap Bulan','1jt - 3jt',7.5),
+(5,'Penghasilan Setiap Bulan','3jt - 5jt',5),
+(6,'Penghasilan Setiap Bulan','> 5jt',2.5),
+(7,'Tanggungan Anak','1 anak',2),
+(8,'Tanggungan Anak','2 anak',4),
+(9,'Tanggungan Anak','3 anak',6),
+(10,'Tanggungan Anak','4 anak',8),
+(11,'Tanggungan Anak','> 4 anak',10),
+(12,'Kondisi Rumah','Cukup Sederhana',10),
+(13,'Kondisi Rumah','Sederhana',7.5),
+(14,'Kondisi Rumah','Mewah',5),
+(15,'Kondisi Rumah','Sangat Mewah',2.5);
 
 /*Table structure for table `user` */
 
