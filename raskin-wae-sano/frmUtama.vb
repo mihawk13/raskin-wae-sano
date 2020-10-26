@@ -1,4 +1,5 @@
 ﻿Public Class frmUtama
+    Dim conn As New Database
 
     Private Sub ActiveMenu(ByVal btn As Button, contBtn As Control, tab As Form, contForm As Control)
         For Each ctrl As Control In contBtn.Controls
@@ -61,11 +62,21 @@
     End Sub
 
     Private Sub btnHasil_Click(sender As Object, e As EventArgs) Handles btnHasil.Click
-
+        Dim dtHasil As DataTable = conn.getQuery("SELECT * FROM hasil_spk")
+        If dtHasil.Rows.Count = 0 Then
+            MessageBox.Show("Belum ada data yang diproses, proses data dahulu!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        ActiveMenu(btnHasil, panUp, frmHasilSPK, panForm)
     End Sub
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
-
+        Dim dtHasil As DataTable = conn.getQuery("SELECT * FROM hasil_spk")
+        If dtHasil.Rows.Count = 0 Then
+            MessageBox.Show("Belum ada data yang diproses, proses data dahulu!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        ActiveMenu(btnLaporan, panUp, frmLaporan, panForm)
     End Sub
 #End Region
 

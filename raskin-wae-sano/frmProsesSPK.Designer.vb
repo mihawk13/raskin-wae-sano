@@ -31,6 +31,7 @@ Partial Class frmProsesSPK
         Me.GCNormal = New DevExpress.XtraGrid.GridControl()
         Me.GVNormal = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.GCMatriks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GVMatriks, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +59,7 @@ Partial Class frmProsesSPK
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.GCMatriks)
         Me.Panel1.Controls.Add(Me.btnProses)
@@ -136,6 +138,24 @@ Partial Class frmProsesSPK
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Normalisasi"
         '
+        'btnClear
+        '
+        Me.btnClear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClear.BackColor = System.Drawing.Color.OrangeRed
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.Enabled = False
+        Me.btnClear.FlatAppearance.BorderSize = 0
+        Me.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed
+        Me.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnClear.Location = New System.Drawing.Point(1056, 7)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(139, 26)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Hapus Hasil Sebelumnya"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
         'frmProsesSPK
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -171,4 +191,5 @@ Partial Class frmProsesSPK
     Friend WithEvents GCNormal As DevExpress.XtraGrid.GridControl
     Friend WithEvents GVNormal As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 End Class
