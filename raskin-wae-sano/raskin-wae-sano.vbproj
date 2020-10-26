@@ -130,6 +130,12 @@
     <Compile Include="frmLaporan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPenduduk.Designer.vb">
       <DependentUpon>frmPenduduk.vb</DependentUpon>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLaporan.resx">
       <DependentUpon>frmLaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPenduduk.resx">
       <DependentUpon>frmPenduduk.vb</DependentUpon>

@@ -35,7 +35,7 @@ Partial Class frmHome
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(1278, 698)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "SISTEM PENDUKUNG KEPUTUSAN SLEKSI PENERIMAN RASKIN DI KELURAHAN WAE SANO"
+        Me.Label1.Text = "SISTEM PENDUKUNG KEPUTUSAN SELEKSI PENERIMAN RASKIN DI KELURAHAN WAE SANO"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmHome

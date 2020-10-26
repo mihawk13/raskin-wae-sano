@@ -1,7 +1,7 @@
 ﻿Public Class frmUtama
     Dim conn As New Database
 
-    Private Sub ActiveMenu(ByVal btn As Button, contBtn As Control, tab As Form, contForm As Control)
+    Public Sub ActiveMenu(ByVal btn As Button, contBtn As Control, tab As Form, contForm As Control)
         For Each ctrl As Control In contBtn.Controls
             If TypeOf ctrl Is Button Then
                 If ctrl.Name <> btn.Name Then
@@ -82,5 +82,18 @@
 
     Private Sub frmUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnHome.PerformClick()
+    End Sub
+
+    Private Sub frmUtama_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If MessageBox.Show("Anda yakin mau keluar?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = System.Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        Else
+            frmLogin.Close()
+        End If
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Me.Hide()
+        frmLogin.Show()
     End Sub
 End Class
