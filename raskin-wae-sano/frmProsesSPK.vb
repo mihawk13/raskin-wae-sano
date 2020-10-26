@@ -5,7 +5,7 @@
     Dim maxK1, minK2, maxK3, maxK4 As Double
     'Bobot Kriteria
     Dim bK1, bK2, bK3, bK4 As Double
-    'Dim x As Integer
+    Dim x As Integer
 
     Public Sub LoadMatriks()
         'Load Matrix
@@ -16,7 +16,7 @@
                                   & "INNER JOIN sub_kriteria k4 ON a.`K_4`=k4.`Sub_Kriteria`")
         GCMatriks.DataSource = dtMatriks
 
-        'x = GVMatriks.RowCount
+        x = GVMatriks.RowCount
     End Sub
 
     Private Sub frmProsesSPK_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -33,19 +33,34 @@
         table.Columns.Add(New DataColumn("K3", GetType(Double)))
         table.Columns.Add(New DataColumn("K4", GetType(Double)))
         table.Columns.Add(New DataColumn("Jumlah", GetType(Double)))
+        table.Columns.Add(New DataColumn("Ranking", GetType(Integer)))
 
         'Cari Min Max dari Matrix
-        Dim K1, K2, K3, K4, jumlah As Double
-
+        Dim K1(x), K2(x), K3(x), K4(x), jumlah(x), rank(x - 1) As Double, ranking As String
+        Dim listRank, listPenduduk As New SortedList()
 
         For i = 0 To GVMatriks.RowCount - 1
-            K1 = GVMatriks.GetRowCellValue(i, "Surat Keterangan Miskin") / maxK1
-            K2 = minK2 / GVMatriks.GetRowCellValue(i, "Nilai Penghasilan")
-            K3 = GVMatriks.GetRowCellValue(i, "Tanggungan Anak") / maxK3
-            K4 = GVMatriks.GetRowCellValue(i, "Kondisi Rumah") / maxK4
-            jumlah = (K1 * bK1) + (K2 * bK2) + (K3 * bK3) + (K4 * bK4)
-            table.Rows.Add(GVMatriks.GetRowCellValue(i, "No_KK"), GVMatriks.GetRowCellValue(i, "Nama"), Math.Round(K1, 2), Math.Round(K2, 2), Math.Round(K3, 2), Math.Round(K4, 2), Math.Round(jumlah, 2))
+            K1(i) = GVMatriks.GetRowCellValue(i, "Surat Keterangan Miskin") / maxK1
+            K2(i) = minK2 / GVMatriks.GetRowCellValue(i, "Nilai Penghasilan")
+            K3(i) = GVMatriks.GetRowCellValue(i, "Tanggungan Anak") / maxK3
+            K4(i) = GVMatriks.GetRowCellValue(i, "Kondisi Rumah") / maxK4
+            jumlah(i) = (K1(i) * bK1) + (K2(i) * bK2) + (K3(i) * bK3) + (K4(i) * bK4)
+            rank(i) = (K1(i) * bK1) + (K2(i) * bK2) + (K3(i) * bK3) + (K4(i) * bK4)
+            listPenduduk.Add(Math.Round(rank(i), 2), GVMatriks.GetRowCellValue(i, "No_KK"))
         Next i
+        'Array.Sort(rank)
+        x = listPenduduk.Count
+
+        For i = 0 To listPenduduk.Count - 1
+            listRank.Add(listPenduduk.GetByIndex(i), x)
+            x -= 1
+        Next
+
+        For i = 0 To GVMatriks.RowCount - 1
+            ranking = listRank(GVMatriks.GetRowCellValue(i, "No_KK"))
+            table.Rows.Add(GVMatriks.GetRowCellValue(i, "No_KK"), GVMatriks.GetRowCellValue(i, "Nama"), Math.Round(K1(i), 2), Math.Round(K2(i), 2), Math.Round(K3(i), 2), Math.Round(K4(i), 2), Math.Round(jumlah(i), 2), ranking)
+        Next i
+
         Return table
     End Function
 
@@ -69,6 +84,8 @@
         bK3 = dtKriteria.Rows(2).Item("Bobot")
         bK4 = dtKriteria.Rows(3).Item("Bobot")
 
+        'tampilkan data normalisasi ke tabel
         GCNormal.DataSource = getNormalisasi()
+        GVNormal.Columns("Ranking").SortOrder = DevExpress.Data.ColumnSortOrder.Ascending
     End Sub
 End Class
