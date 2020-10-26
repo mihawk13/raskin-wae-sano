@@ -57,7 +57,7 @@
     End Sub
 
     Private Sub btnProses_Click(sender As Object, e As EventArgs) Handles btnProses.Click
-
+        ActiveMenu(btnProses, panUp, frmProsesSPK, panForm)
     End Sub
 
     Private Sub btnHasil_Click(sender As Object, e As EventArgs) Handles btnHasil.Click

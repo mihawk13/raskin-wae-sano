@@ -61,7 +61,7 @@ Partial Class frmPenduduk_Tambah
         Me.panUp.Dock = System.Windows.Forms.DockStyle.Top
         Me.panUp.Location = New System.Drawing.Point(0, 0)
         Me.panUp.Name = "panUp"
-        Me.panUp.Size = New System.Drawing.Size(617, 71)
+        Me.panUp.Size = New System.Drawing.Size(613, 71)
         Me.panUp.TabIndex = 0
         '
         'lblJudul
@@ -72,7 +72,7 @@ Partial Class frmPenduduk_Tambah
         Me.lblJudul.Location = New System.Drawing.Point(13, 9)
         Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(589, 48)
+        Me.lblJudul.Size = New System.Drawing.Size(585, 48)
         Me.lblJudul.TabIndex = 2
         Me.lblJudul.Text = "Tambah Data Penduduk"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -107,7 +107,7 @@ Partial Class frmPenduduk_Tambah
         Me.panDown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panDown.Location = New System.Drawing.Point(0, 71)
         Me.panDown.Name = "panDown"
-        Me.panDown.Size = New System.Drawing.Size(617, 234)
+        Me.panDown.Size = New System.Drawing.Size(613, 242)
         Me.panDown.TabIndex = 0
         '
         'cboK4
@@ -332,7 +332,7 @@ Partial Class frmPenduduk_Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(617, 305)
+        Me.ClientSize = New System.Drawing.Size(613, 313)
         Me.ControlBox = False
         Me.Controls.Add(Me.panDown)
         Me.Controls.Add(Me.panUp)
