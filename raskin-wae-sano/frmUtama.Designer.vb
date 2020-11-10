@@ -265,6 +265,7 @@ Partial Class frmUtama
         Me.Name = "frmUtama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SPK Seleksi Penerima Raskin - Wae Sano"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.panUp.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)

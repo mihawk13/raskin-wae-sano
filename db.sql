@@ -72,10 +72,10 @@ CREATE TABLE `penduduk` (
 /*Data for the table `penduduk` */
 
 insert  into `penduduk`(`ID`,`No_KK`,`No_KTP`,`Nama`,`Desa`,`Kecamatan`,`RT_RW`,`K_1`,`K_2`,`K_3`,`K_4`) values 
-(1,'531204206973006','531204200390006','Antonius','Wae Sano','Sanangoang','002/001','Tidak Punya','< 1jt','4 anak','Cukup Sederhana'),
-(2,'537564206970005','531204206950006','Blasius Jeramun','Wae Sano','Sangaruang','002/001','Punya','> 5jt','1 anak','Sangat Mewah'),
-(3,'531235025560005','532564252450006','Jeremia','Wae Sano','Sangaruang','005/003','Tidak Punya','3jt - 5jt','2 anak','Mewah'),
-(4,'532665632563006','531204207670006','Benediktus','Wae Sano','Sanangoang','005/006','Punya','1jt - 3jt','3 anak','Sederhana');
+(1,'531204206973006','531204200390006','Antonius','Wae Sano','Sanongoang','002/001','Tidak Punya','< 1jt','4 anak','Cukup Sederhana'),
+(2,'537564206970005','531204206950006','Blasius Jeramun','Wae Sano','Sanongoang','002/001','Punya','> 5jt','1 anak','Sangat Mewah'),
+(3,'531235025560005','532564252450006','Jeremia','Wae Sano','Sanongoang','005/003','Tidak Punya','3jt - 5jt','2 anak','Mewah'),
+(4,'532665632563006','531204207670006','Benediktus','Wae Sano','Sanongoang','005/006','Punya','1jt - 3jt','3 anak','Sederhana');
 
 /*Table structure for table `sub_kriteria` */
 
