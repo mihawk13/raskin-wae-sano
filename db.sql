@@ -29,6 +29,19 @@ CREATE TABLE `hasil_spk` (
 
 /*Data for the table `hasil_spk` */
 
+insert  into `hasil_spk`(`No_KTP`,`Jumlah`,`Ranking`) values 
+('5312040912080008',16.38,5),
+('5312042007390006',10.88,9),
+('5312042077670006',17.38,3),
+('5312042706950006',19.12,2),
+('5312044204720002',19.38,1),
+('5312044604120001',15.75,6),
+('5312044808970005',11.25,8),
+('5312044812990003',7.88,11),
+('5312046108130003',11.88,7),
+('5312048007030002',16.75,4),
+('5325642752450006',9.5,10);
+
 /*Table structure for table `kriteria` */
 
 DROP TABLE IF EXISTS `kriteria`;
@@ -67,15 +80,22 @@ CREATE TABLE `penduduk` (
   PRIMARY KEY (`ID`),
   UNIQUE KEY `No_KK` (`No_KK`),
   UNIQUE KEY `No_KTP` (`No_KTP`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 /*Data for the table `penduduk` */
 
 insert  into `penduduk`(`ID`,`No_KK`,`No_KTP`,`Nama`,`Desa`,`Kecamatan`,`RT_RW`,`K_1`,`K_2`,`K_3`,`K_4`) values 
-(1,'531204206973006','531204200390006','Antonius','Wae Sano','Sanongoang','002/001','Tidak Punya','< 1jt','4 anak','Cukup Sederhana'),
-(2,'537564206970005','531204206950006','Blasius Jeramun','Wae Sano','Sanongoang','002/001','Punya','> 5jt','1 anak','Sangat Mewah'),
-(3,'531235025560005','532564252450006','Jeremia','Wae Sano','Sanongoang','005/003','Tidak Punya','3jt - 5jt','2 anak','Mewah'),
-(4,'532665632563006','531204207670006','Benediktus','Wae Sano','Sanongoang','005/006','Punya','1jt - 3jt','3 anak','Sederhana');
+(1,'5312042706973006','5312042007390006','Antonius','Wae Sano','Sanongoang','002/001','Tidak Punya','< 1jt','4 anak','Cukup Sederhana (bambu)'),
+(2,'5375642706970005','5312042706950006','Blasius Jeramun','Wae Sano','Sanongoang','002/001','Punya','> 5jt','1 anak','Sangat Mewah (tembok, kaca dan keramik)'),
+(3,'5312350725560005','5325642752450006','Jeremia','Wae Sano','Sanongoang','005/003','Tidak Punya','3jt - 5jt','2 anak','Mewah (tembok)'),
+(4,'5326656732563006','5312042077670006','Benediktus','Wae Sano','Sanongoang','005/006','Punya','1jt - 3jt','3 anak','Sederhana (papan)'),
+(5,'5312040912080008','5312040912080008','Muhamad Ansari','Wae Sano','Sanongoang','002/001','Punya','1jt - 3jt','2 anak','Sederhana (papan)'),
+(6,'5312040205060002','5312044204720002','Gregorius Dalus','Wae Sano','Sanongoang','002/001','Punya','< 1jt','> 4 anak','Cukup Sederhana (bambu)'),
+(7,'5312042903600003','5312044808970005','Bonefasius Jehadan','Wae Sano','Sanongoang','002/001','Tidak Punya','1jt - 3jt','> 4 anak','Mewah (tembok)'),
+(8,'5312043207050007','5312044812990003','Aventinus Benyamin','Wae Sano','Sanongoang','002/001','Tidak Punya','< 1jt','1 anak','Cukup Sederhana (bambu)'),
+(9,'5312046508200004','5312048007030002','Yohanes Refandi','Wae Sano','Sanongoang','002/001','Punya','1jt - 3jt','3 anak','Mewah (tembok)'),
+(10,'5312048092800005','5312044604120001','Brunoldus Candra','Wae Sano','Sanongoang','002/001','Punya','1jt - 3jt','2 anak','Mewah (tembok)'),
+(11,'5312044205010008','5312046108130003','Marianus Jebaburt','Wae Sano','Sanongoang','002/001','Tidak Punya','< 1jt','> 4 anak','Cukup Sederhana (bambu)');
 
 /*Table structure for table `sub_kriteria` */
 
@@ -84,7 +104,7 @@ DROP TABLE IF EXISTS `sub_kriteria`;
 CREATE TABLE `sub_kriteria` (
   `No` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `Kriteria` varchar(50) NOT NULL,
-  `Sub_Kriteria` varchar(20) NOT NULL,
+  `Sub_Kriteria` varchar(50) NOT NULL,
   `Bobot` double NOT NULL,
   PRIMARY KEY (`No`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
@@ -103,10 +123,10 @@ insert  into `sub_kriteria`(`No`,`Kriteria`,`Sub_Kriteria`,`Bobot`) values
 (9,'Tanggungan Anak','3 anak',6),
 (10,'Tanggungan Anak','4 anak',8),
 (11,'Tanggungan Anak','> 4 anak',10),
-(12,'Kondisi Rumah','Cukup Sederhana',10),
-(13,'Kondisi Rumah','Sederhana',7.5),
-(14,'Kondisi Rumah','Mewah',5),
-(15,'Kondisi Rumah','Sangat Mewah',2.5);
+(12,'Kondisi Rumah','Cukup Sederhana (bambu)',10),
+(13,'Kondisi Rumah','Sederhana (papan)',7.5),
+(14,'Kondisi Rumah','Mewah (tembok)',5),
+(15,'Kondisi Rumah','Sangat Mewah (tembok, kaca dan keramik)',2.5);
 
 /*Table structure for table `user` */
 

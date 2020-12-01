@@ -249,6 +249,7 @@ Partial Class frmUtama
         '
         'panForm
         '
+        Me.panForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.panForm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panForm.Location = New System.Drawing.Point(0, 122)
         Me.panForm.Name = "panForm"

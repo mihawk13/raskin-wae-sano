@@ -1,7 +1,7 @@
 ﻿Public Class frmSubKriteria_Tambah
     Dim conn As New Database
     Dim hasil As Boolean, dtKriteria As New DataTable
-    Public idSubKriteria As Integer = 0
+    Public idSubKriteria As Integer = 0, edit As Boolean = False
 
     Public Sub Clear()
         Me.Text = "Tambah Data Sub Kriteria"
@@ -14,6 +14,15 @@
 
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         Clear()
+    End Sub
+
+    Public Sub loadKriteria()
+        dtKriteria = conn.getQuery("SELECT * FROM Kriteria")
+        cboKriteria.Items.Clear()
+        For i = 0 To dtKriteria.Rows.Count - 1
+            cboKriteria.Items.Add(dtKriteria.Rows(i).Item(1))
+        Next
+        cboKriteria.Items.Add("")
     End Sub
 
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
@@ -32,7 +41,7 @@
             frmSubKriteria.LoadData()
             Clear()
         Else
-            hasil = conn.setQuery("UPDATE SubKriteria SET No_Kriteria = '" & cboKriteria.Text & "', Sub_Kriteria = '" & txtSub.Text & "', Bobot = '" & txtBobot.Text & "' WHERE No = '" & idSubKriteria & "'")
+            hasil = conn.setQuery("UPDATE Sub_Kriteria SET Kriteria = '" & cboKriteria.Text & "', Sub_Kriteria = '" & txtSub.Text & "', Bobot = '" & txtBobot.Text & "' WHERE No = '" & idSubKriteria & "'")
             If hasil <> True Then
                 MessageBox.Show("Terjadi kesalahan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
@@ -51,11 +60,8 @@
     End Sub
 
     Private Sub frmSubKriteria_Tambah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dtKriteria = conn.getQuery("SELECT * FROM Kriteria")
-        cboKriteria.Items.Clear()
-        For i = 0 To dtKriteria.Rows.Count - 1
-            cboKriteria.Items.Add(dtKriteria.Rows(i).Item(1))
-        Next
-        cboKriteria.Items.Add("")
+        If edit = False Then
+            loadKriteria()
+        End If
     End Sub
 End Class

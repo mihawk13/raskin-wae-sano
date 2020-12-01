@@ -19,32 +19,28 @@
     End Sub
 
     Private Sub GridView_Click(sender As Object, e As EventArgs) Handles GridView.Click
-        'frmSubKriteria_Tambah.Text = "Ubah Data SubKriteria"
-        'frmSubKriteria_Tambah.lblJudul.Text = "Ubah Data SubKriteria"
-        'frmSubKriteria_Tambah.idSubKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "ID")
-        'frmSubKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_KK")
-        'frmSubKriteria_Tambah.txtSub.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_KTP")
-        'frmSubKriteria_Tambah.txtNama.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Nama")
-        'frmSubKriteria_Tambah.txtDesa.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Desa")
-        'frmSubKriteria_Tambah.txtKec.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Kecamatan")
-        'frmSubKriteria_Tambah.txtRT.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "RT_RW")
-        'frmSubKriteria_Tambah.txtAlamat.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Alamat")
-        'btnUbah.Enabled = True
+        frmSubKriteria_Tambah.loadKriteria()
+        frmSubKriteria_Tambah.Text = "Ubah Data SubKriteria"
+        frmSubKriteria_Tambah.lblJudul.Text = "Ubah Data SubKriteria"
+        frmSubKriteria_Tambah.idSubKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No")
+        frmSubKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Bobot")
+        frmSubKriteria_Tambah.txtSub.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Sub_Kriteria")
+        frmSubKriteria_Tambah.cboKriteria.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Kriteria")
+        frmSubKriteria_Tambah.edit = True
+        btnUbah.Enabled = True
     End Sub
 
     Private Sub GridView_DoubleClick(sender As Object, e As EventArgs) Handles GridView.DoubleClick
-        'frmSubKriteria_Tambah.Text = "Ubah Data SubKriteria"
-        'frmSubKriteria_Tambah.lblJudul.Text = "Ubah Data SubKriteria"
-        'frmSubKriteria_Tambah.idSubKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "ID")
-        'frmSubKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_KK")
-        'frmSubKriteria_Tambah.txtSub.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_KTP")
-        'frmSubKriteria_Tambah.txtNama.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Nama")
-        'frmSubKriteria_Tambah.txtDesa.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Desa")
-        'frmSubKriteria_Tambah.txtKec.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Kecamatan")
-        'frmSubKriteria_Tambah.txtRT.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "RT_RW")
-        'frmSubKriteria_Tambah.txtAlamat.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Alamat")
-        'btnUbah.Enabled = True
-        'frmSubKriteria_Tambah.ShowDialog()
+        frmSubKriteria_Tambah.loadKriteria()
+        frmSubKriteria_Tambah.Text = "Ubah Data SubKriteria"
+        frmSubKriteria_Tambah.lblJudul.Text = "Ubah Data SubKriteria"
+        frmSubKriteria_Tambah.idSubKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No")
+        frmSubKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Bobot")
+        frmSubKriteria_Tambah.txtSub.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Sub_Kriteria")
+        frmSubKriteria_Tambah.cboKriteria.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Kriteria")
+        frmSubKriteria_Tambah.edit = True
+        btnUbah.Enabled = True
+        frmSubKriteria_Tambah.ShowDialog()
     End Sub
 
     Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
