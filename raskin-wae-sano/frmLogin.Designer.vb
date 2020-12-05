@@ -29,6 +29,8 @@ Partial Class frmLogin
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnBatal = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -37,7 +39,7 @@ Partial Class frmLogin
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(41, 58)
+        Me.Label1.Location = New System.Drawing.Point(68, 258)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 13)
         Me.Label1.TabIndex = 0
@@ -45,17 +47,17 @@ Partial Class frmLogin
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(104, 55)
+        Me.txtUser.Location = New System.Drawing.Point(71, 274)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(168, 20)
+        Me.txtUser.Size = New System.Drawing.Size(228, 20)
         Me.txtUser.TabIndex = 1
         '
         'txtPass
         '
-        Me.txtPass.Location = New System.Drawing.Point(104, 81)
+        Me.txtPass.Location = New System.Drawing.Point(73, 318)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPass.Size = New System.Drawing.Size(168, 20)
+        Me.txtPass.Size = New System.Drawing.Size(226, 20)
         Me.txtPass.TabIndex = 3
         '
         'Label2
@@ -64,7 +66,7 @@ Partial Class frmLogin
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(43, 84)
+        Me.Label2.Location = New System.Drawing.Point(70, 302)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 2
@@ -72,7 +74,6 @@ Partial Class frmLogin
         '
         'btnBatal
         '
-        Me.btnBatal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnBatal.BackColor = System.Drawing.Color.OrangeRed
         Me.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBatal.FlatAppearance.BorderSize = 0
@@ -80,7 +81,7 @@ Partial Class frmLogin
         Me.btnBatal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.btnBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnBatal.Location = New System.Drawing.Point(193, 107)
+        Me.btnBatal.Location = New System.Drawing.Point(203, 355)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(79, 26)
         Me.btnBatal.TabIndex = 7
@@ -89,7 +90,6 @@ Partial Class frmLogin
         '
         'btnLogin
         '
-        Me.btnLogin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnLogin.BackColor = System.Drawing.Color.DarkOrange
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.FlatAppearance.BorderSize = 0
@@ -97,12 +97,23 @@ Partial Class frmLogin
         Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnLogin.Location = New System.Drawing.Point(104, 107)
+        Me.btnLogin.Location = New System.Drawing.Point(90, 355)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(79, 26)
         Me.btnLogin.TabIndex = 6
         Me.btnLogin.Text = "LOGIN"
         Me.btnLogin.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(71, 34)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(226, 210)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'frmLogin
         '
@@ -110,8 +121,9 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(334, 170)
+        Me.ClientSize = New System.Drawing.Size(372, 412)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnBatal)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPass)
@@ -123,6 +135,7 @@ Partial Class frmLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SPK SELEKSI PENERIMA RASKIN DI KELURAHAN WAE SANO"
         Me.TopMost = True
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -133,4 +146,5 @@ Partial Class frmLogin
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnBatal As System.Windows.Forms.Button
     Friend WithEvents btnLogin As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
