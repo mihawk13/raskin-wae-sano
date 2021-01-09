@@ -112,7 +112,13 @@ Public Class frmProsesSPK
             'rank(i) = jumlah
             'MsgBox(GVMatriks.GetRowCellValue(i, "No_KTP"))
             'MsgBox(jKriteria(i))
-            listPenduduk.Add(i, GVMatriks.GetRowCellValue(i, "No_KTP"))
+            Dim jml As Double = jKriteria(i)
+            Try
+                listPenduduk.Add(jml, GVMatriks.GetRowCellValue(i, "No_KTP"))
+            Catch ex As Exception
+                jml += 0.01
+                listPenduduk.Add(jml, GVMatriks.GetRowCellValue(i, "No_KTP"))
+            End Try
             'MsgBox(jKriteria(i))
         Next i
         'Array.Sort(rank)
