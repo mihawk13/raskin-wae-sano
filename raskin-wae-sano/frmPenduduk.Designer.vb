@@ -22,6 +22,8 @@ Partial Class frmPenduduk
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPenduduk))
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.btnUbah = New System.Windows.Forms.Button()
         Me.btnCari = New System.Windows.Forms.Button()
@@ -31,10 +33,14 @@ Partial Class frmPenduduk
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GridControl = New DevExpress.XtraGrid.GridControl()
         Me.GridView = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.cmStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.AktifMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NonAktifMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.GridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnTambah
@@ -144,6 +150,26 @@ Partial Class frmPenduduk
         Me.GridView.OptionsBehavior.Editable = False
         Me.GridView.OptionsView.ShowGroupPanel = False
         '
+        'cmStrip
+        '
+        Me.cmStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AktifMenuItem, Me.NonAktifMenuItem})
+        Me.cmStrip.Name = "ContextMenuStrip"
+        Me.cmStrip.Size = New System.Drawing.Size(202, 48)
+        '
+        'AktifMenuItem
+        '
+        Me.AktifMenuItem.Image = CType(resources.GetObject("AktifMenuItem.Image"), System.Drawing.Image)
+        Me.AktifMenuItem.Name = "AktifMenuItem"
+        Me.AktifMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.AktifMenuItem.Text = "Aktifkan Penduduk"
+        '
+        'NonAktifMenuItem
+        '
+        Me.NonAktifMenuItem.Image = CType(resources.GetObject("NonAktifMenuItem.Image"), System.Drawing.Image)
+        Me.NonAktifMenuItem.Name = "NonAktifMenuItem"
+        Me.NonAktifMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.NonAktifMenuItem.Text = "Non Aktifkan Penduduk"
+        '
         'frmPenduduk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -164,6 +190,7 @@ Partial Class frmPenduduk
         Me.Panel2.ResumeLayout(False)
         CType(Me.GridControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.cmStrip.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -176,4 +203,7 @@ Partial Class frmPenduduk
     Friend WithEvents GridView As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtCari As System.Windows.Forms.TextBox
+    Friend WithEvents cmStrip As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents AktifMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NonAktifMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

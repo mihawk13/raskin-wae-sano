@@ -18,21 +18,20 @@
 
     Public Sub loadKriteria()
         dtKriteria = conn.getQuery("SELECT * FROM Kriteria")
-        cboKriteria.Items.Clear()
-        For i = 0 To dtKriteria.Rows.Count - 1
-            cboKriteria.Items.Add(dtKriteria.Rows(i).Item(1))
-        Next
-        cboKriteria.Items.Add("")
+        cboKriteria.DataSource = dtKriteria
+        cboKriteria.DisplayMember = "Nama"
+        cboKriteria.ValueMember = "No_Kriteria"
     End Sub
 
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+        'MsgBox(cboKriteria.SelectedValue)
         If String.IsNullOrEmpty(cboKriteria.Text) Or String.IsNullOrEmpty(txtSub.Text) Or String.IsNullOrEmpty(txtBobot.Text) Then
             MessageBox.Show("Mohon lengkapi data dulu sebelum disimpan!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
 
         If Me.Text = "Tambah Data Sub Kriteria" Then
-            hasil = conn.setQuery("INSERT INTO Sub_Kriteria(Kriteria,Sub_Kriteria,Bobot) VALUES('" & cboKriteria.Text & "','" & txtSub.Text & "','" & txtBobot.Text & "')")
+            hasil = conn.setQuery("INSERT INTO Sub_Kriteria(Kriteria_ID,Sub_Kriteria,Bobot) VALUES('" & cboKriteria.SelectedValue & "','" & txtSub.Text & "','" & txtBobot.Text & "')")
             If hasil <> True Then
                 MessageBox.Show("Terjadi kesalahan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
@@ -41,7 +40,7 @@
             frmSubKriteria.LoadData()
             Clear()
         Else
-            hasil = conn.setQuery("UPDATE Sub_Kriteria SET Kriteria = '" & cboKriteria.Text & "', Sub_Kriteria = '" & txtSub.Text & "', Bobot = '" & txtBobot.Text & "' WHERE No = '" & idSubKriteria & "'")
+            hasil = conn.setQuery("UPDATE Sub_Kriteria SET Kriteria_ID = '" & cboKriteria.SelectedValue & "', Sub_Kriteria = '" & txtSub.Text & "', Bobot = '" & txtBobot.Text & "' WHERE No = '" & idSubKriteria & "'")
             If hasil <> True Then
                 MessageBox.Show("Terjadi kesalahan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub

@@ -23,7 +23,7 @@
         End If
 
         If Me.Text = "Tambah Data Kriteria" Then
-            hasil = conn.setQuery("INSERT INTO Kriteria(Nama,Bobot) VALUES('" & txtNama.Text & "','" & txtBobot.Text & "')")
+            hasil = conn.setQuery("INSERT INTO Kriteria(Nama,Bobot,Atribut) VALUES('" & txtNama.Text & "','" & txtBobot.Text & "','" & cboAttr.Text & "')")
             If hasil <> True Then
                 MessageBox.Show("Terjadi kesalahan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
@@ -32,7 +32,7 @@
             frmKriteria.LoadData()
             Clear()
         Else
-            hasil = conn.setQuery("UPDATE Kriteria SET Nama = '" & txtNama.Text & "', Bobot = '" & txtBobot.Text & "' WHERE No_Kriteria = '" & idKriteria & "'")
+            hasil = conn.setQuery("UPDATE Kriteria SET Nama = '" & txtNama.Text & "', Bobot = '" & txtBobot.Text & "', Atribut = '" & cboAttr.Text & "' WHERE No_Kriteria = '" & idKriteria & "'")
             If hasil <> True Then
                 MessageBox.Show("Terjadi kesalahan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub

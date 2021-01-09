@@ -4,7 +4,8 @@
     Dim bdSource As New BindingSource
 
     Public Sub LoadData()
-        dtSubKriteria = conn.getQuery("SELECT * FROM Sub_Kriteria")
+        dtSubKriteria = conn.getQuery("SELECT a.No,b.Nama 'Kriteria',a.Sub_Kriteria,a.Bobot FROM Sub_Kriteria a " _
+                                      & "INNER JOIN kriteria b ON a.Kriteria_ID =b.No_Kriteria")
         bdSource.DataSource = dtSubKriteria
         GridControl.DataSource = bdSource
     End Sub

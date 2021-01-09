@@ -25,14 +25,13 @@ Partial Class frmPenduduk_Tambah
         Me.panUp = New System.Windows.Forms.Panel()
         Me.lblJudul = New System.Windows.Forms.Label()
         Me.panDown = New System.Windows.Forms.Panel()
-        Me.cboK4 = New System.Windows.Forms.ComboBox()
-        Me.cboK3 = New System.Windows.Forms.ComboBox()
-        Me.cboK2 = New System.Windows.Forms.ComboBox()
-        Me.cboK1 = New System.Windows.Forms.ComboBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.imgKTP = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.imgKK = New System.Windows.Forms.PictureBox()
+        Me.btnKTP = New System.Windows.Forms.Button()
+        Me.btnKK = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.btnSimpan = New System.Windows.Forms.Button()
         Me.btnBatal = New System.Windows.Forms.Button()
         Me.txtRT = New System.Windows.Forms.TextBox()
@@ -51,6 +50,10 @@ Partial Class frmPenduduk_Tambah
         Me.Label1 = New System.Windows.Forms.Label()
         Me.panUp.SuspendLayout()
         Me.panDown.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.imgKTP, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.imgKK, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panUp
@@ -61,7 +64,7 @@ Partial Class frmPenduduk_Tambah
         Me.panUp.Dock = System.Windows.Forms.DockStyle.Top
         Me.panUp.Location = New System.Drawing.Point(0, 0)
         Me.panUp.Name = "panUp"
-        Me.panUp.Size = New System.Drawing.Size(613, 71)
+        Me.panUp.Size = New System.Drawing.Size(954, 71)
         Me.panUp.TabIndex = 0
         '
         'lblJudul
@@ -72,7 +75,7 @@ Partial Class frmPenduduk_Tambah
         Me.lblJudul.Location = New System.Drawing.Point(13, 9)
         Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(585, 48)
+        Me.lblJudul.Size = New System.Drawing.Size(926, 48)
         Me.lblJudul.TabIndex = 2
         Me.lblJudul.Text = "Tambah Data Penduduk"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -80,14 +83,11 @@ Partial Class frmPenduduk_Tambah
         'panDown
         '
         Me.panDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panDown.Controls.Add(Me.cboK4)
-        Me.panDown.Controls.Add(Me.cboK3)
-        Me.panDown.Controls.Add(Me.cboK2)
-        Me.panDown.Controls.Add(Me.cboK1)
-        Me.panDown.Controls.Add(Me.Label13)
-        Me.panDown.Controls.Add(Me.Label12)
-        Me.panDown.Controls.Add(Me.Label11)
-        Me.panDown.Controls.Add(Me.Label9)
+        Me.panDown.Controls.Add(Me.GroupBox2)
+        Me.panDown.Controls.Add(Me.GroupBox1)
+        Me.panDown.Controls.Add(Me.btnKTP)
+        Me.panDown.Controls.Add(Me.btnKK)
+        Me.panDown.Controls.Add(Me.Label15)
         Me.panDown.Controls.Add(Me.btnSimpan)
         Me.panDown.Controls.Add(Me.btnBatal)
         Me.panDown.Controls.Add(Me.txtRT)
@@ -107,80 +107,73 @@ Partial Class frmPenduduk_Tambah
         Me.panDown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panDown.Location = New System.Drawing.Point(0, 71)
         Me.panDown.Name = "panDown"
-        Me.panDown.Size = New System.Drawing.Size(613, 242)
+        Me.panDown.Size = New System.Drawing.Size(954, 241)
         Me.panDown.TabIndex = 0
         '
-        'cboK4
+        'GroupBox2
         '
-        Me.cboK4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboK4.FormattingEnabled = True
-        Me.cboK4.Location = New System.Drawing.Point(452, 122)
-        Me.cboK4.Name = "cboK4"
-        Me.cboK4.Size = New System.Drawing.Size(121, 21)
-        Me.cboK4.TabIndex = 11
+        Me.GroupBox2.Controls.Add(Me.imgKTP)
+        Me.GroupBox2.Location = New System.Drawing.Point(385, 130)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(137, 94)
+        Me.GroupBox2.TabIndex = 20
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Gambar KTP"
         '
-        'cboK3
+        'imgKTP
         '
-        Me.cboK3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboK3.FormattingEnabled = True
-        Me.cboK3.Location = New System.Drawing.Point(452, 95)
-        Me.cboK3.Name = "cboK3"
-        Me.cboK3.Size = New System.Drawing.Size(121, 21)
-        Me.cboK3.TabIndex = 11
+        Me.imgKTP.Location = New System.Drawing.Point(5, 14)
+        Me.imgKTP.Name = "imgKTP"
+        Me.imgKTP.Size = New System.Drawing.Size(128, 74)
+        Me.imgKTP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imgKTP.TabIndex = 15
+        Me.imgKTP.TabStop = False
         '
-        'cboK2
+        'GroupBox1
         '
-        Me.cboK2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboK2.FormattingEnabled = True
-        Me.cboK2.Location = New System.Drawing.Point(452, 68)
-        Me.cboK2.Name = "cboK2"
-        Me.cboK2.Size = New System.Drawing.Size(121, 21)
-        Me.cboK2.TabIndex = 11
+        Me.GroupBox1.Controls.Add(Me.imgKK)
+        Me.GroupBox1.Location = New System.Drawing.Point(385, 29)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(137, 94)
+        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Gambar KK"
         '
-        'cboK1
+        'imgKK
         '
-        Me.cboK1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboK1.FormattingEnabled = True
-        Me.cboK1.Location = New System.Drawing.Point(452, 41)
-        Me.cboK1.Name = "cboK1"
-        Me.cboK1.Size = New System.Drawing.Size(121, 21)
-        Me.cboK1.TabIndex = 11
+        Me.imgKK.Location = New System.Drawing.Point(5, 14)
+        Me.imgKK.Name = "imgKK"
+        Me.imgKK.Size = New System.Drawing.Size(128, 74)
+        Me.imgKK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imgKK.TabIndex = 15
+        Me.imgKK.TabStop = False
         '
-        'Label13
+        'btnKTP
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(323, 120)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(78, 13)
-        Me.Label13.TabIndex = 9
-        Me.Label13.Text = "Kondisi Rumah"
+        Me.btnKTP.Location = New System.Drawing.Point(299, 173)
+        Me.btnKTP.Name = "btnKTP"
+        Me.btnKTP.Size = New System.Drawing.Size(80, 23)
+        Me.btnKTP.TabIndex = 18
+        Me.btnKTP.Text = "Pilih Gambar"
+        Me.btnKTP.UseVisualStyleBackColor = True
         '
-        'Label12
+        'btnKK
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(323, 94)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(96, 13)
-        Me.Label12.TabIndex = 9
-        Me.Label12.Text = "Tanggungan Anak"
+        Me.btnKK.Location = New System.Drawing.Point(299, 71)
+        Me.btnKK.Name = "btnKK"
+        Me.btnKK.Size = New System.Drawing.Size(80, 23)
+        Me.btnKK.TabIndex = 17
+        Me.btnKK.Text = "Pilih Gambar"
+        Me.btnKK.UseVisualStyleBackColor = True
         '
-        'Label11
+        'Label15
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(323, 68)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(128, 13)
-        Me.Label11.TabIndex = 9
-        Me.Label11.Text = "Penghasilan Setiap Bulan"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(323, 45)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(123, 13)
-        Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Surat Keterangan Miskin"
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(327, 13)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(172, 13)
+        Me.Label15.TabIndex = 14
+        Me.Label15.Text = "SILAHKAN MASUKKAN GAMBAR"
         '
         'btnSimpan
         '
@@ -304,7 +297,7 @@ Partial Class frmPenduduk_Tambah
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(310, 13)
+        Me.Label10.Location = New System.Drawing.Point(642, 14)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(241, 13)
         Me.Label10.TabIndex = 0
@@ -332,20 +325,22 @@ Partial Class frmPenduduk_Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 313)
+        Me.ClientSize = New System.Drawing.Size(954, 312)
         Me.ControlBox = False
         Me.Controls.Add(Me.panDown)
         Me.Controls.Add(Me.panUp)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmPenduduk_Tambah"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tambah Data Penduduk"
-        Me.TopMost = True
         Me.panUp.ResumeLayout(False)
         Me.panDown.ResumeLayout(False)
         Me.panDown.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.imgKTP, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.imgKK, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -367,13 +362,12 @@ Partial Class frmPenduduk_Tambah
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents cboK4 As System.Windows.Forms.ComboBox
-    Friend WithEvents cboK3 As System.Windows.Forms.ComboBox
-    Friend WithEvents cboK2 As System.Windows.Forms.ComboBox
-    Friend WithEvents cboK1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents btnKTP As System.Windows.Forms.Button
+    Friend WithEvents btnKK As System.Windows.Forms.Button
+    Friend WithEvents imgKK As System.Windows.Forms.PictureBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents imgKTP As System.Windows.Forms.PictureBox
 End Class

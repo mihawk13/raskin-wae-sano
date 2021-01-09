@@ -19,6 +19,7 @@
         frmKriteria_Tambah.idKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_Kriteria")
         frmKriteria_Tambah.txtNama.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Nama")
         frmKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Bobot")
+        frmKriteria_Tambah.cboAttr.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Atribut")
     End Sub
 
     Private Sub GridView_DoubleClick(sender As Object, e As EventArgs) Handles GridView.DoubleClick
@@ -27,6 +28,7 @@
         frmKriteria_Tambah.idKriteria = GridView.GetRowCellValue(GridView.FocusedRowHandle, "No_Kriteria")
         frmKriteria_Tambah.txtNama.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Nama")
         frmKriteria_Tambah.txtBobot.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Bobot")
+        frmKriteria_Tambah.cboAttr.Text = GridView.GetRowCellValue(GridView.FocusedRowHandle, "Atribut")
         frmKriteria_Tambah.ShowDialog()
     End Sub
 
@@ -40,5 +42,9 @@
 
     Private Sub txtCari_TextChanged(sender As Object, e As EventArgs) Handles txtCari.TextChanged
         bdSource.Filter = "Nama LIKE '%" & txtCari.Text & "%'"
+    End Sub
+
+    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        frmKriteria_Tambah.ShowDialog()
     End Sub
 End Class

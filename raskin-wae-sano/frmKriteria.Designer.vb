@@ -30,6 +30,7 @@ Partial Class frmKriteria
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GridControl = New DevExpress.XtraGrid.GridControl()
         Me.GridView = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.btnTambah = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.GridControl, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,7 +46,7 @@ Partial Class frmKriteria
         Me.btnUbah.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUbah.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnUbah.Location = New System.Drawing.Point(12, 12)
+        Me.btnUbah.Location = New System.Drawing.Point(107, 12)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(89, 26)
         Me.btnUbah.TabIndex = 2
@@ -70,6 +71,7 @@ Partial Class frmKriteria
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnTambah)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.txtCari)
         Me.Panel1.Controls.Add(Me.btnUbah)
@@ -126,6 +128,22 @@ Partial Class frmKriteria
         Me.GridView.OptionsBehavior.Editable = False
         Me.GridView.OptionsView.ShowGroupPanel = False
         '
+        'btnTambah
+        '
+        Me.btnTambah.BackColor = System.Drawing.Color.RoyalBlue
+        Me.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTambah.FlatAppearance.BorderSize = 0
+        Me.btnTambah.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue
+        Me.btnTambah.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTambah.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnTambah.Location = New System.Drawing.Point(12, 12)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(89, 26)
+        Me.btnTambah.TabIndex = 5
+        Me.btnTambah.Text = "Tambah"
+        Me.btnTambah.UseVisualStyleBackColor = False
+        '
         'frmKriteria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -157,4 +175,5 @@ Partial Class frmKriteria
     Friend WithEvents GridView As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtCari As System.Windows.Forms.TextBox
+    Friend WithEvents btnTambah As System.Windows.Forms.Button
 End Class

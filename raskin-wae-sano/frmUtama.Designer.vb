@@ -263,6 +263,7 @@ Partial Class frmUtama
         Me.ClientSize = New System.Drawing.Size(1350, 729)
         Me.Controls.Add(Me.panForm)
         Me.Controls.Add(Me.panUp)
+        Me.MinimumSize = New System.Drawing.Size(875, 0)
         Me.Name = "frmUtama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SPK Seleksi Penerima Raskin - Wae Sano"

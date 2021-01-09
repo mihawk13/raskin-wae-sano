@@ -32,6 +32,8 @@ Partial Class frmKriteria_Tambah
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboAttr = New System.Windows.Forms.ComboBox()
         Me.panUp.SuspendLayout()
         Me.panDown.SuspendLayout()
         Me.SuspendLayout()
@@ -44,7 +46,7 @@ Partial Class frmKriteria_Tambah
         Me.panUp.Dock = System.Windows.Forms.DockStyle.Top
         Me.panUp.Location = New System.Drawing.Point(0, 0)
         Me.panUp.Name = "panUp"
-        Me.panUp.Size = New System.Drawing.Size(333, 71)
+        Me.panUp.Size = New System.Drawing.Size(329, 71)
         Me.panUp.TabIndex = 0
         '
         'lblJudul
@@ -55,7 +57,7 @@ Partial Class frmKriteria_Tambah
         Me.lblJudul.Location = New System.Drawing.Point(13, 9)
         Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(305, 48)
+        Me.lblJudul.Size = New System.Drawing.Size(301, 48)
         Me.lblJudul.TabIndex = 2
         Me.lblJudul.Text = "Tambah Data Kriteria"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -63,6 +65,8 @@ Partial Class frmKriteria_Tambah
         'panDown
         '
         Me.panDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panDown.Controls.Add(Me.cboAttr)
+        Me.panDown.Controls.Add(Me.Label3)
         Me.panDown.Controls.Add(Me.btnSimpan)
         Me.panDown.Controls.Add(Me.btnBatal)
         Me.panDown.Controls.Add(Me.txtBobot)
@@ -73,7 +77,7 @@ Partial Class frmKriteria_Tambah
         Me.panDown.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panDown.Location = New System.Drawing.Point(0, 71)
         Me.panDown.Name = "panDown"
-        Me.panDown.Size = New System.Drawing.Size(333, 149)
+        Me.panDown.Size = New System.Drawing.Size(329, 172)
         Me.panDown.TabIndex = 0
         '
         'btnSimpan
@@ -85,7 +89,7 @@ Partial Class frmKriteria_Tambah
         Me.btnSimpan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
         Me.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSimpan.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnSimpan.Location = New System.Drawing.Point(75, 105)
+        Me.btnSimpan.Location = New System.Drawing.Point(75, 130)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(89, 26)
         Me.btnSimpan.TabIndex = 7
@@ -101,7 +105,7 @@ Partial Class frmKriteria_Tambah
         Me.btnBatal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
         Me.btnBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnBatal.Location = New System.Drawing.Point(170, 105)
+        Me.btnBatal.Location = New System.Drawing.Point(170, 130)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(89, 26)
         Me.btnBatal.TabIndex = 8
@@ -149,11 +153,30 @@ Partial Class frmKriteria_Tambah
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Bobot"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(68, 99)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Atribut"
+        '
+        'cboAttr
+        '
+        Me.cboAttr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboAttr.FormattingEnabled = True
+        Me.cboAttr.Items.AddRange(New Object() {"Keuntungan", "Biaya", ""})
+        Me.cboAttr.Location = New System.Drawing.Point(144, 96)
+        Me.cboAttr.Name = "cboAttr"
+        Me.cboAttr.Size = New System.Drawing.Size(121, 21)
+        Me.cboAttr.TabIndex = 10
+        '
         'frmKriteria_Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(333, 220)
+        Me.ClientSize = New System.Drawing.Size(329, 243)
         Me.ControlBox = False
         Me.Controls.Add(Me.panDown)
         Me.Controls.Add(Me.panUp)
@@ -180,4 +203,6 @@ Partial Class frmKriteria_Tambah
     Friend WithEvents btnSimpan As System.Windows.Forms.Button
     Friend WithEvents btnBatal As System.Windows.Forms.Button
     Friend WithEvents txtBobot As System.Windows.Forms.TextBox
+    Friend WithEvents cboAttr As System.Windows.Forms.ComboBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

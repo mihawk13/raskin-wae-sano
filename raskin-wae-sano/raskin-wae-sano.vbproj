@@ -106,6 +106,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="frmHasilSPK.Designer.vb">
       <DependentUpon>frmHasilSPK.vb</DependentUpon>
     </Compile>
